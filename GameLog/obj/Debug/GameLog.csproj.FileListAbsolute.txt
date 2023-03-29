@@ -1,0 +1,13 @@
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\bin\Debug\GameLog.dll
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\bin\Debug\GameLog.pdb
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\bin\Debug\log4net.dll
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\bin\Debug\Serilog.dll
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\bin\Debug\System.ValueTuple.dll
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\bin\Debug\log4net.xml
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\bin\Debug\Serilog.xml
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\bin\Debug\System.ValueTuple.xml
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\obj\Debug\GameLog.csproj.AssemblyReference.cache
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\obj\Debug\GameLog.csproj.CoreCompileInputs.cache
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\obj\Debug\GameLog.csproj.CopyComplete
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\obj\Debug\GameLog.dll
+D:\WorkProject\C#Project\AD.CoreERP\GameLog\obj\Debug\GameLog.pdb

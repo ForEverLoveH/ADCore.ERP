@@ -1,0 +1,100 @@
+
+
+Date：2023-03-15 17:11:48.406
+LogLevel：Error
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/3/15 17:11:48
+【异常类型】：Exception
+【异常信息】：【主库】状态不可用，等待后台检查程序恢复方可使用。Authentication to host '127.0.0.1' for user 'DYL' using method 'mysql_native_password' failed with message: Access denied for user 'DYL'@'localhost' (using password: NO)
+【堆栈调用】：   在 FreeSql.Internal.ObjectPool.ObjectPool`1.GetFree(Boolean checkAvailable) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\ObjectPool\ObjectPool.cs:行号 287
+   在 FreeSql.Internal.ObjectPool.ObjectPool`1.Get(Nullable`1 timeout) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\ObjectPool\ObjectPool.cs:行号 318
+   在 FreeSql.MySql.MySqlCodeFirst.GetComparisonDDLStatements(TypeAndName[] objects) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\MySqlCodeFirst.cs:行号 96
+   在 FreeSql.Internal.CommonProvider.CodeFirstProvider.SyncStructure(TypeAndName[] objects) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\CodeFirstProvider.cs:行号 124
+   在 FreeSql.Internal.CommonProvider.CodeFirstProvider.SyncStructure[TEntity]() 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\CodeFirstProvider.cs:行号 85
+   在 FreeSql.Internal.CommonProvider.Select0Provider`2..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\SelectProvider\Select0Provider.cs:行号 553
+   在 FreeSql.Internal.CommonProvider.Select1Provider`1..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\SelectProvider\Select1Provider.cs:行号 23
+   在 FreeSql.MySql.Curd.MySqlSelect`1..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\Curd\MySqlSelect.cs:行号 117
+   在 FreeSql.MySql.MySqlProvider`1.CreateSelectProvider[T1](Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\MySqlProvider.cs:行号 42
+   在 FreeSql.Internal.CommonProvider.BaseDbProvider.Select[T1]() 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\BaseDbProvider.cs:行号 16
+   在 AD.CoreERP.AD.CoreWindowSys.LoginWindowSys.LoginGameByAccount(String acc, String pass) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindowSys\LoginWindowSys.cs:行号 74
+   在 AD.CoreERP.AD.CoreWindowSys.LoginWindowSys.LoginGame(String acc, String pass) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindowSys\LoginWindowSys.cs:行号 41
+   在 AD.CoreERP.AD.CoreWindow.LoginWindow.LoginGame() 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindow\LoginWindow.cs:行号 50
+   在 AD.CoreERP.AD.CoreWindow.LoginWindow.uiButton1_Click(Object sender, EventArgs e) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindow\LoginWindow.cs:行号 39
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 Sunny.UI.UIButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+【异常方法】：FreeSql.Internal.ObjectPool.Object`1[T] GetFree(Boolean)
+***************************************************************
+
+--------------------------------------------------
+
+Date：2023-03-15 17:11:50.322
+LogLevel：Error
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/3/15 17:11:50
+【异常类型】：Exception
+【异常信息】：【主库】状态不可用，等待后台检查程序恢复方可使用。Authentication to host '127.0.0.1' for user 'DYL' using method 'mysql_native_password' failed with message: Access denied for user 'DYL'@'localhost' (using password: NO)
+【堆栈调用】：   在 FreeSql.Internal.ObjectPool.ObjectPool`1.GetFree(Boolean checkAvailable) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\ObjectPool\ObjectPool.cs:行号 287
+   在 FreeSql.Internal.ObjectPool.ObjectPool`1.Get(Nullable`1 timeout) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\ObjectPool\ObjectPool.cs:行号 318
+   在 FreeSql.MySql.MySqlCodeFirst.GetComparisonDDLStatements(TypeAndName[] objects) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\MySqlCodeFirst.cs:行号 96
+   在 FreeSql.Internal.CommonProvider.CodeFirstProvider.SyncStructure(TypeAndName[] objects) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\CodeFirstProvider.cs:行号 124
+   在 FreeSql.Internal.CommonProvider.CodeFirstProvider.SyncStructure[TEntity]() 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\CodeFirstProvider.cs:行号 85
+   在 FreeSql.Internal.CommonProvider.Select0Provider`2..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\SelectProvider\Select0Provider.cs:行号 553
+   在 FreeSql.Internal.CommonProvider.Select1Provider`1..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\SelectProvider\Select1Provider.cs:行号 23
+   在 FreeSql.MySql.Curd.MySqlSelect`1..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\Curd\MySqlSelect.cs:行号 117
+   在 FreeSql.MySql.MySqlProvider`1.CreateSelectProvider[T1](Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\MySqlProvider.cs:行号 42
+   在 FreeSql.Internal.CommonProvider.BaseDbProvider.Select[T1]() 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\BaseDbProvider.cs:行号 16
+   在 AD.CoreERP.AD.CoreWindowSys.LoginWindowSys.LoginGameByAccount(String acc, String pass) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindowSys\LoginWindowSys.cs:行号 74
+   在 AD.CoreERP.AD.CoreWindowSys.LoginWindowSys.LoginGame(String acc, String pass) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindowSys\LoginWindowSys.cs:行号 41
+   在 AD.CoreERP.AD.CoreWindow.LoginWindow.LoginGame() 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindow\LoginWindow.cs:行号 50
+   在 AD.CoreERP.AD.CoreWindow.LoginWindow.uiButton1_Click(Object sender, EventArgs e) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindow\LoginWindow.cs:行号 39
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 Sunny.UI.UIButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+【异常方法】：FreeSql.Internal.ObjectPool.Object`1[T] GetFree(Boolean)
+***************************************************************
+
+--------------------------------------------------
+
+Date：2023-03-15 17:11:50.634
+LogLevel：Error
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/3/15 17:11:50
+【异常类型】：Exception
+【异常信息】：【主库】状态不可用，等待后台检查程序恢复方可使用。Authentication to host '127.0.0.1' for user 'DYL' using method 'mysql_native_password' failed with message: Access denied for user 'DYL'@'localhost' (using password: NO)
+【堆栈调用】：   在 FreeSql.Internal.ObjectPool.ObjectPool`1.GetFree(Boolean checkAvailable) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\ObjectPool\ObjectPool.cs:行号 287
+   在 FreeSql.Internal.ObjectPool.ObjectPool`1.Get(Nullable`1 timeout) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\ObjectPool\ObjectPool.cs:行号 318
+   在 FreeSql.MySql.MySqlCodeFirst.GetComparisonDDLStatements(TypeAndName[] objects) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\MySqlCodeFirst.cs:行号 96
+   在 FreeSql.Internal.CommonProvider.CodeFirstProvider.SyncStructure(TypeAndName[] objects) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\CodeFirstProvider.cs:行号 124
+   在 FreeSql.Internal.CommonProvider.CodeFirstProvider.SyncStructure[TEntity]() 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\CodeFirstProvider.cs:行号 85
+   在 FreeSql.Internal.CommonProvider.Select0Provider`2..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\SelectProvider\Select0Provider.cs:行号 553
+   在 FreeSql.Internal.CommonProvider.Select1Provider`1..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\SelectProvider\Select1Provider.cs:行号 23
+   在 FreeSql.MySql.Curd.MySqlSelect`1..ctor(IFreeSql orm, CommonUtils commonUtils, CommonExpression commonExpression, Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\Curd\MySqlSelect.cs:行号 117
+   在 FreeSql.MySql.MySqlProvider`1.CreateSelectProvider[T1](Object dywhere) 位置 C:\Users\28810\Desktop\github\FreeSql\Providers\FreeSql.Provider.MySql\MySqlProvider.cs:行号 42
+   在 FreeSql.Internal.CommonProvider.BaseDbProvider.Select[T1]() 位置 C:\Users\28810\Desktop\github\FreeSql\FreeSql\Internal\CommonProvider\BaseDbProvider.cs:行号 16
+   在 AD.CoreERP.AD.CoreWindowSys.LoginWindowSys.LoginGameByAccount(String acc, String pass) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindowSys\LoginWindowSys.cs:行号 74
+   在 AD.CoreERP.AD.CoreWindowSys.LoginWindowSys.LoginGame(String acc, String pass) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindowSys\LoginWindowSys.cs:行号 41
+   在 AD.CoreERP.AD.CoreWindow.LoginWindow.LoginGame() 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindow\LoginWindow.cs:行号 50
+   在 AD.CoreERP.AD.CoreWindow.LoginWindow.uiButton1_Click(Object sender, EventArgs e) 位置 D:\WorkProject\C#Project\AD.CoreERP\AD.CoreERP\AD.CoreClientSystem\AD.CoreWindow\LoginWindow.cs:行号 39
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 Sunny.UI.UIButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+【异常方法】：FreeSql.Internal.ObjectPool.Object`1[T] GetFree(Boolean)
+***************************************************************
+
+--------------------------------------------------
