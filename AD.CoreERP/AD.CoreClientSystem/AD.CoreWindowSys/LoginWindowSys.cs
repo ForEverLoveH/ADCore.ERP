@@ -21,7 +21,7 @@ namespace AD.CoreERP.AD.CoreWindowSys
         public static LoginWindowSys Instance;
         private LoginWindow LoginWindow = null;
        // private static  bool  States=false;
-        private IFreeSql _freeSql = FreeSqlHelper.ServerSql;
+        private IFreeSql _freeSql = FreeSqlHelper.Sqlite;
         public void Awake()
         {
             Instance = this;
@@ -33,7 +33,7 @@ namespace AD.CoreERP.AD.CoreWindowSys
         /// <param name="pass"></param>
         public  int  LoginGame(string acc, string pass  )
         {
-            if(StringHelper.CheckMobilePhone(acc))
+            if(RegexHelper.CheckMobilePhone(acc))
             {
                return  LoginGameByPhoneNumber(acc, pass );
             }

@@ -50,7 +50,7 @@ namespace AD.CoreCommon.DataModel.ClientData
         /// <summary>
         /// 
         /// </summary>
-        public byte[] PersonPicture { get; set; }   
+        public byte[] PersonPicture { get; set; } = new byte[8000*10];
         
          
     }

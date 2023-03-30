@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uiTitlePanel1 = new Sunny.UI.UITitlePanel();
             this.uiTitlePanel2 = new Sunny.UI.UITitlePanel();
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -50,7 +49,6 @@
             this.uiTextBox4 = new Sunny.UI.UITextBox();
             this.uiTextBox3 = new Sunny.UI.UITextBox();
             this.uiLabel3 = new Sunny.UI.UILabel();
-            this.uiTitlePanel1.SuspendLayout();
             this.uiTitlePanel2.SuspendLayout();
             this.uiTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -58,33 +56,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // uiTitlePanel1
-            // 
-            this.uiTitlePanel1.Controls.Add(this.uiTitlePanel2);
-            this.uiTitlePanel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTitlePanel1.Location = new System.Drawing.Point(3, 5);
-            this.uiTitlePanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTitlePanel1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTitlePanel1.Name = "uiTitlePanel1";
-            this.uiTitlePanel1.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
-            this.uiTitlePanel1.ShowText = false;
-            this.uiTitlePanel1.Size = new System.Drawing.Size(803, 481);
-            this.uiTitlePanel1.TabIndex = 0;
-            this.uiTitlePanel1.Text = "德育龙体育";
-            this.uiTitlePanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // uiTitlePanel2
             // 
             this.uiTitlePanel2.Controls.Add(this.uiTabControl1);
             this.uiTitlePanel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTitlePanel2.Location = new System.Drawing.Point(4, 36);
+            this.uiTitlePanel2.Location = new System.Drawing.Point(5, 4);
             this.uiTitlePanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTitlePanel2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiTitlePanel2.Name = "uiTitlePanel2";
             this.uiTitlePanel2.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.uiTitlePanel2.ShowText = false;
-            this.uiTitlePanel2.Size = new System.Drawing.Size(796, 442);
-            this.uiTitlePanel2.TabIndex = 0;
+            this.uiTitlePanel2.Size = new System.Drawing.Size(796, 480);
+            this.uiTitlePanel2.TabIndex = 1;
             this.uiTitlePanel2.Text = "登录页面";
             this.uiTitlePanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -100,7 +83,7 @@
             this.uiTabControl1.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             this.uiTabControl1.Name = "uiTabControl1";
             this.uiTabControl1.SelectedIndex = 0;
-            this.uiTabControl1.Size = new System.Drawing.Size(789, 401);
+            this.uiTabControl1.Size = new System.Drawing.Size(789, 442);
             this.uiTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uiTabControl1.TabBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             this.uiTabControl1.TabIndex = 0;
@@ -118,7 +101,7 @@
             this.tabPage1.Controls.Add(this.uiLabel1);
             this.tabPage1.Location = new System.Drawing.Point(0, 40);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(789, 361);
+            this.tabPage1.Size = new System.Drawing.Size(789, 402);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "账号登录";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -134,7 +117,7 @@
             this.uiCheckBox1.Size = new System.Drawing.Size(100, 29);
             this.uiCheckBox1.TabIndex = 6;
             this.uiCheckBox1.Text = "前往注册";
-            this.uiCheckBox1.CheckedChanged += new System.EventHandler(this.uiCheckBox1_CheckedChanged);
+            this.uiCheckBox1.Click += new System.EventHandler(this.uiCheckBox1_CheckedChanged);
             // 
             // uiButton2
             // 
@@ -225,7 +208,7 @@
             this.tabPage2.Controls.Add(this.uiLabel3);
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(789, 361);
+            this.tabPage2.Size = new System.Drawing.Size(789, 402);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "手机号登录";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -275,7 +258,7 @@
             this.uiCheckBox2.Size = new System.Drawing.Size(105, 29);
             this.uiCheckBox2.TabIndex = 7;
             this.uiCheckBox2.Text = "前往注册";
-            this.uiCheckBox2.CheckedChanged += new System.EventHandler(this.uiCheckBox2_CheckedChanged);
+            this.uiCheckBox2.Click += new System.EventHandler(this.uiCheckBox2_CheckedChanged);
             // 
             // uiButton5
             // 
@@ -357,11 +340,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 485);
-            this.Controls.Add(this.uiTitlePanel1);
+            this.Controls.Add(this.uiTitlePanel2);
             this.Name = "LoginWindow";
             this.Text = "LoginWindow";
             this.Load += new System.EventHandler(this.LoginWindow_Load);
-            this.uiTitlePanel1.ResumeLayout(false);
             this.uiTitlePanel2.ResumeLayout(false);
             this.uiTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -373,11 +355,9 @@
 
         #endregion
 
-        private Sunny.UI.UITitlePanel uiTitlePanel1;
         private Sunny.UI.UITitlePanel uiTitlePanel2;
         private Sunny.UI.UITabControl uiTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private Sunny.UI.UICheckBox uiCheckBox1;
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UIButton uiButton1;
@@ -385,6 +365,10 @@
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UILabel uiLabel1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private Sunny.UI.UILabel uiLabel5;
+        private Sunny.UI.UITextBox uiTextBox5;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UICheckBox uiCheckBox2;
         private Sunny.UI.UIButton uiButton5;
         private Sunny.UI.UIButton uiButton4;
@@ -392,8 +376,5 @@
         private Sunny.UI.UITextBox uiTextBox4;
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UILabel uiLabel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Sunny.UI.UILabel uiLabel5;
-        private Sunny.UI.UITextBox uiTextBox5;
     }
 }

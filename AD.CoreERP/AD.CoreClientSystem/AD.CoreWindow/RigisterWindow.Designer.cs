@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uiTitlePanel1 = new Sunny.UI.UITitlePanel();
             this.uiTitlePanel2 = new Sunny.UI.UITitlePanel();
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,43 +43,25 @@
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiLabel1 = new Sunny.UI.UILabel();
-            this.uiTitlePanel1.SuspendLayout();
             this.uiTitlePanel2.SuspendLayout();
             this.uiGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // uiTitlePanel1
-            // 
-            this.uiTitlePanel1.Controls.Add(this.uiTitlePanel2);
-            this.uiTitlePanel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTitlePanel1.Location = new System.Drawing.Point(0, 0);
-            this.uiTitlePanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTitlePanel1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTitlePanel1.Name = "uiTitlePanel1";
-            this.uiTitlePanel1.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
-            this.uiTitlePanel1.ShowText = false;
-            this.uiTitlePanel1.Size = new System.Drawing.Size(973, 459);
-            this.uiTitlePanel1.TabIndex = 0;
-            this.uiTitlePanel1.Text = "德育龙体育";
-            this.uiTitlePanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.uiTitlePanel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
             // uiTitlePanel2
             // 
             this.uiTitlePanel2.Controls.Add(this.uiGroupBox2);
             this.uiTitlePanel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTitlePanel2.Location = new System.Drawing.Point(4, 35);
+            this.uiTitlePanel2.Location = new System.Drawing.Point(3, 1);
             this.uiTitlePanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTitlePanel2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiTitlePanel2.Name = "uiTitlePanel2";
             this.uiTitlePanel2.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.uiTitlePanel2.ShowText = false;
-            this.uiTitlePanel2.Size = new System.Drawing.Size(965, 424);
-            this.uiTitlePanel2.TabIndex = 0;
+            this.uiTitlePanel2.Size = new System.Drawing.Size(965, 459);
+            this.uiTitlePanel2.TabIndex = 1;
             this.uiTitlePanel2.Text = "注册页面";
             this.uiTitlePanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.uiTitlePanel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiGroupBox2
             // 
@@ -103,11 +84,10 @@
             this.uiGroupBox2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiGroupBox2.Name = "uiGroupBox2";
             this.uiGroupBox2.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            this.uiGroupBox2.Size = new System.Drawing.Size(944, 370);
+            this.uiGroupBox2.Size = new System.Drawing.Size(944, 414);
             this.uiGroupBox2.TabIndex = 1;
             this.uiGroupBox2.Text = "个人信息";
             this.uiGroupBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.uiGroupBox2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // pictureBox1
             // 
@@ -131,7 +111,6 @@
             this.uiTextBox5.TabIndex = 9;
             this.uiTextBox5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiTextBox5.Watermark = "";
-            this.uiTextBox5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel5
             // 
@@ -142,7 +121,6 @@
             this.uiLabel5.TabIndex = 8;
             this.uiLabel5.Text = "图像验证码：";
             this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.uiLabel5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiButton3
             // 
@@ -155,7 +133,7 @@
             this.uiButton3.TabIndex = 3;
             this.uiButton3.Text = "退出";
             this.uiButton3.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
             // 
             // uiTextBox4
             // 
@@ -165,12 +143,12 @@
             this.uiTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox4.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox4.Name = "uiTextBox4";
+            this.uiTextBox4.PasswordChar = '*';
             this.uiTextBox4.ShowText = false;
             this.uiTextBox4.Size = new System.Drawing.Size(331, 31);
             this.uiTextBox4.TabIndex = 7;
             this.uiTextBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiTextBox4.Watermark = "";
-            this.uiTextBox4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiButton2
             // 
@@ -183,7 +161,6 @@
             this.uiButton2.TabIndex = 2;
             this.uiButton2.Text = "保存";
             this.uiButton2.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
             // uiLabel4
@@ -195,22 +172,20 @@
             this.uiLabel4.TabIndex = 6;
             this.uiLabel4.Text = "请再次输入密码：";
             this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.uiLabel4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiTextBox3
             // 
             this.uiTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox3.Location = new System.Drawing.Point(303, 176);
+            this.uiTextBox3.Location = new System.Drawing.Point(303, 187);
             this.uiTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox3.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox3.Name = "uiTextBox3";
             this.uiTextBox3.ShowText = false;
-            this.uiTextBox3.Size = new System.Drawing.Size(331, 41);
+            this.uiTextBox3.Size = new System.Drawing.Size(331, 30);
             this.uiTextBox3.TabIndex = 5;
             this.uiTextBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiTextBox3.Watermark = "";
-            this.uiTextBox3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel3
             // 
@@ -221,7 +196,6 @@
             this.uiLabel3.TabIndex = 4;
             this.uiLabel3.Text = "手机号：";
             this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiTextBox2
             // 
@@ -237,7 +211,6 @@
             this.uiTextBox2.TabIndex = 3;
             this.uiTextBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiTextBox2.Watermark = "";
-            this.uiTextBox2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel2
             // 
@@ -248,7 +221,6 @@
             this.uiLabel2.TabIndex = 2;
             this.uiLabel2.Text = "密码：";
             this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.uiLabel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiTextBox1
             // 
@@ -263,7 +235,6 @@
             this.uiTextBox1.TabIndex = 1;
             this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiTextBox1.Watermark = "";
-            this.uiTextBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel1
             // 
@@ -274,18 +245,16 @@
             this.uiLabel1.TabIndex = 0;
             this.uiLabel1.Text = "账号信息：";
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // RigisterWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 459);
-            this.Controls.Add(this.uiTitlePanel1);
+            this.Controls.Add(this.uiTitlePanel2);
             this.Name = "RigisterWindow";
             this.Text = "RigisterWindow";
             this.Load += new System.EventHandler(this.RigisterWindow_Load);
-            this.uiTitlePanel1.ResumeLayout(false);
             this.uiTitlePanel2.ResumeLayout(false);
             this.uiGroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -295,12 +264,14 @@
 
         #endregion
 
-        private Sunny.UI.UITitlePanel uiTitlePanel1;
         private Sunny.UI.UITitlePanel uiTitlePanel2;
-        private Sunny.UI.UIButton uiButton3;
-        private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UIGroupBox uiGroupBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Sunny.UI.UITextBox uiTextBox5;
+        private Sunny.UI.UILabel uiLabel5;
+        private Sunny.UI.UIButton uiButton3;
         private Sunny.UI.UITextBox uiTextBox4;
+        private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UILabel uiLabel4;
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UILabel uiLabel3;
@@ -308,8 +279,5 @@
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UILabel uiLabel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Sunny.UI.UITextBox uiTextBox5;
-        private Sunny.UI.UILabel uiLabel5;
     }
 }

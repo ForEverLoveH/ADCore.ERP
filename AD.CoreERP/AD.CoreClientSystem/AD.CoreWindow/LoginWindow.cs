@@ -156,5 +156,7 @@ namespace AD.CoreERP.AD.CoreWindow
             Hide();
             LoginWindowSys.Instance.ToRegisterWindow();
         }
+
+         
     }
 }

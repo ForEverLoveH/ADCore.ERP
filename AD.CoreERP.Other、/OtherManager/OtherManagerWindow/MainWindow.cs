@@ -75,46 +75,69 @@ namespace AD.CoreERP.Other_.OtherManager.OtherManagerWindow
 
         private void uiButton3_Click(object sender, EventArgs e)
         {
-           string name = uiTextBox1.Text.Trim();
+            string name = uiTextBox1.Text.Trim();
             string nowAddress = uiTextBox2.Text.Trim();
             string sex =uiComboBox1.Text.Trim();
             string familyAddress = uiTextBox3.Text.Trim();
             string IdPassword = uiTextBox4.Text.Trim();
             string emailAddress = uiTextBox5.Text.Trim();
             string depart = uiComboBox3.Text.Trim();
-            string    sarly = uiComboBox2.Text.Trim();
+            string  sarly = uiComboBox2.Text.Trim();
             if(!string.IsNullOrEmpty(name)&&!string.IsNullOrEmpty(nowAddress)&& !string.IsNullOrEmpty(sex)&& !string.IsNullOrEmpty(familyAddress)&&!string.IsNullOrEmpty(IdPassword) && !string.IsNullOrEmpty(emailAddress) && !string.IsNullOrEmpty(depart) && !string.IsNullOrEmpty(sarly))
             {
-                var sl = StringHelper.ImageToBytes(bmp);
-                RegisterTable userData = new RegisterTable()
+                var sl = ImageHelper.ImageToBytes(bmp);
+                if (RegexHelper.IsEmail(emailAddress))
                 {
-                    Account = registerTable.Account,
-                    TelPhone = registerTable.TelPhone,
-                    Department = depart,
-                    familyAddress = familyAddress,
-                    NowAddress = nowAddress,
-                    Email = emailAddress,
-                    PersonIDCard = int.Parse(IdPassword),
-                    SalaryData = sarly,
-                    Password = registerTable.Password,
-                    HandleState = 1,
-                    PersonPicture = sl,
-
-                };
-                if (MainWindowSys.Instance.InsertDataToRegister(userData))
-                {
-                    UIMessageBox.ShowSuccess("保存成功");
-                    if (MessageBox.Show("是否清空全部数据", "警告", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                    if (RegexHelper.IsIDCard(IdPassword)) 
                     {
-                        ClearAllData();
-                    }
-                    return;
-                }
+                        RegisterTable userData = new RegisterTable()
+                        {
+                            Account = registerTable.Account,
+                            TelPhone = registerTable.TelPhone,
+                            Department = depart,
+                            familyAddress = familyAddress,
+                            NowAddress = nowAddress,
+                            Email = emailAddress,
+                            PersonIDCard = int.Parse(IdPassword),
+                            SalaryData = sarly,
+                            Password = registerTable.Password,
+                            HandleState = 1,
+                            PersonPicture = sl,
 
+                        };
+                        if (MainWindowSys.Instance.InsertDataToRegister(userData))
+                        {
+                            UIMessageBox.ShowSuccess("保存成功");
+                            if (MessageBox.Show("是否清空全部数据", "警告", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                            {
+                                ClearAllData();
+                            }
+                            return;
+                        }
+                        else
+                        {
+                            UIMessageBox.ShowError("保存失败！！");
+                            return;
+
+                        }
+                    }
+                    else
+                    {
+                        UIMessageBox.ShowWarning("请输入一个有效的身份证信息！！");
+                        return;
+                    }
+                }
                 else
                 {
+                    UIMessageBox.ShowWarning("请输入一个可用的邮箱地址！！");
+                    uiTextBox5.Text= string.Empty;
                     return;
                 }
+            }
+            else
+            {
+                UIMessageBox.ShowError("请将信息填写完整");
+                return;
             }
         }
 
@@ -125,34 +148,51 @@ namespace AD.CoreERP.Other_.OtherManager.OtherManagerWindow
             uiTextBox3.Text =string.Empty;
             uiTextBox4.Text=string.Empty;
             uiTextBox5.Text=string.Empty;
-            //pictureBox1.Image = null;
+            pictureBox1.Image = null;
+            bmp = null;
+            uiComboBox1.Text= string.Empty;
+            uiComboBox3.Text= string.Empty;
+            uiComboBox2.Text= string.Empty; 
+            
+
+
         }
         Bitmap bmp= null;   
-        private void uiButton1_Click(object sender, EventArgs e)
+       
+
+   
+        private void uiButton2_Click(object sender, EventArgs e)
         {
             string path = MainWindowSys.Instance.OpenChooseLocalImageFile();
-            if(path == null)
-            {  
-                return;
+            if (!string.IsNullOrEmpty(path))
+            {
+                bmp= (Bitmap)Image.FromFile(path);
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = bmp;
             }
             else
             {
-                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                bmp= (Bitmap)Image.FromFile(path);
-                pictureBox1.Image = bmp;
+                return;
             }
         }
 
-        private void uiButton2_Click(object sender, EventArgs e)
+        private void uiButton1_Click(object sender, EventArgs e)
         {
             pictureBox1.Image= null;
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            bmp = null;
             string path = MainWindowSys.Instance.OpenChooseLocalImageFile();
-            bmp = (Bitmap)Image.FromFile(path);
-            pictureBox1.Image = bmp;
-
+            if (!string.IsNullOrEmpty(path))
+            {
+                bmp = (Bitmap)Image.FromFile(path);
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = bmp;
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

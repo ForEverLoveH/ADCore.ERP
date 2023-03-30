@@ -97,8 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModel\ClientData\DepartMentModel\DepartMentModel.cs" />
+    <Compile Include="DataModel\ClientData\Helper\ImageHelper\ImageHelper.cs" />
     <Compile Include="DataModel\ClientData\LoginGameModel\RegisterTable.cs" />
-    <Compile Include="DataModel\ClientData\StringHelper\StringHelper.cs" />
+    <Compile Include="DataModel\ClientData\RegexHelper\RegexHelper.cs" />
     <Compile Include="DataModel\ClientData\TaskModel\PersonTaskDataModel.cs" />
     <Compile Include="DataModel\ClientData\UserData\UserData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

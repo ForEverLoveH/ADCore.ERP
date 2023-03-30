@@ -40,7 +40,7 @@ namespace AD.CoreERP.AD.CoreClientSystem.AD.CoreWindow
              if (!string.IsNullOrEmpty(acc) && !string.IsNullOrEmpty(pass) && !string.IsNullOrEmpty(repass) &&
                  !string.IsNullOrEmpty(telPhone)&&!string.IsNullOrEmpty(ImageCodeStr) )
              {
-                if (StringHelper.CheckMobilePhone(telPhone))
+                if (RegexHelper.CheckMobilePhone(telPhone))
                 {
                     if (strImageVeriCode.ToLower() == ImageCodeStr || strImageVeriCode.ToUpper() == ImageCodeStr)
                     {
@@ -96,6 +96,11 @@ namespace AD.CoreERP.AD.CoreClientSystem.AD.CoreWindow
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             UpDataImageCode();
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

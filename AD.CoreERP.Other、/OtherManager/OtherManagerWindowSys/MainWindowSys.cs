@@ -41,7 +41,7 @@ namespace AD.CoreERP.Other.OtherManager.OtherManagerWindowSys
         public  RegisterTable LoadingInintdata(string account, string password)
         {
             RegisterTable list = new RegisterTable();
-            if (StringHelper.CheckMobilePhone(account))
+            if (RegexHelper.CheckMobilePhone(account))
             {
                 list = freeSql.Select<RegisterTable>().Where(A => A.TelPhone == account && A.Password == password).ToOne();
                 if (list != null  )
@@ -123,7 +123,7 @@ namespace AD.CoreERP.Other.OtherManager.OtherManagerWindowSys
                 if (item.departPicture==null)
                     data.P_SetDepartMentPicture = null;
                 else
-                    data.P_SetDepartMentPicture = StringHelper.BytesToBitmap(item.departPicture);
+                    data.P_SetDepartMentPicture = ImageHelper.BytesToBitmap(item.departPicture);
                 departMentData.Add(data);
                 flowLayoutPanel1.Controls.Add(data);
             }
@@ -144,7 +144,7 @@ namespace AD.CoreERP.Other.OtherManager.OtherManagerWindowSys
                 if (openFileDialog2.FileName != "")
                 {
                     string psth = openFileDialog2.FileName;
-                   if( JudgeIsImageFile(psth))
+                   if(ImageHelper. JudgeIsImageFile(psth))
                          return psth;
                    else return null;
                 }
@@ -159,19 +159,8 @@ namespace AD.CoreERP.Other.OtherManager.OtherManagerWindowSys
             }
            
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="psth"></param>
-        /// <returns></returns>
-        private bool JudgeIsImageFile(string psth)
-        {
-            if (psth.EndsWith(".jpg") || psth.EndsWith(".png") || psth.EndsWith(".jpeg") || psth.EndsWith(".bmp") || psth.EndsWith(".gif"))
-            {
-                return true;
-            }
-            else { return false; }
-        }
+        
+        
         /// <summary>
         /// 
         /// </summary>
@@ -179,9 +168,33 @@ namespace AD.CoreERP.Other.OtherManager.OtherManagerWindowSys
         /// <returns></returns>
         public bool InsertDataToRegister(RegisterTable userData)
         {
-            int result = freeSql.InsertOrUpdate<RegisterTable>() .SetSource(userData).ExecuteAffrows();
-            if( result == 1) return true;
+            if (ClearDataBase(userData.Account, userData.TelPhone, userData.Password))
+            {
+                int result = freeSql.InsertOrUpdate<RegisterTable>().SetSource(userData).ExecuteAffrows();
+                if (result == 1) return true;
+                else { return false; }
+            }
             else { return false; }
+
+        }
+        /// <summary>
+        /// 删除之前的注册信息
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="telPhone"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        private  bool ClearDataBase(string account, string telPhone, string password)
+        {
+            var res = freeSql.Select<RegisterTable>().Where(a => a.Account == account && a.TelPhone == telPhone && a.Password == password).ToOne();
+            if (res != null)
+            {
+                var sl = freeSql.Delete<RegisterTable>().Where(a => a.Account == account && a.TelPhone == telPhone && a.Password == password).ExecuteAffrows();
+                if (sl == 1) return true;
+                else return false;
+            }
+            else return true;
+        
         }
     }
 }

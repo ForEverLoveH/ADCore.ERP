@@ -34,6 +34,11 @@
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            this.uiGroupBox3 = new Sunny.UI.UIGroupBox();
+            this.uiButton2 = new Sunny.UI.UIButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.uiButton1 = new Sunny.UI.UIButton();
+            this.uiButton3 = new Sunny.UI.UIButton();
             this.uiComboBox3 = new Sunny.UI.UIComboBox();
             this.uiLabel9 = new Sunny.UI.UILabel();
             this.uiComboBox2 = new Sunny.UI.UIComboBox();
@@ -51,12 +56,30 @@
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiLabel1 = new Sunny.UI.UILabel();
+            this.uiLabel10 = new Sunny.UI.UILabel();
+            this.uiLabel11 = new Sunny.UI.UILabel();
+            this.uiLabel12 = new Sunny.UI.UILabel();
+            this.uiLabel13 = new Sunny.UI.UILabel();
+            this.uiLabel14 = new Sunny.UI.UILabel();
+            this.uiLabel15 = new Sunny.UI.UILabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.uiButton1 = new Sunny.UI.UIButton();
-            this.uiButton2 = new Sunny.UI.UIButton();
-            this.uiGroupBox3 = new Sunny.UI.UIGroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uiButton3 = new Sunny.UI.UIButton();
+            this.uiTextBox6 = new Sunny.UI.UITextBox();
+            this.uiTextBox7 = new Sunny.UI.UITextBox();
+            this.uiTextBox8 = new Sunny.UI.UITextBox();
+            this.uiTextBox9 = new Sunny.UI.UITextBox();
+            this.uiTextBox10 = new Sunny.UI.UITextBox();
+            this.uiLabel16 = new Sunny.UI.UILabel();
+            this.uiLabel17 = new Sunny.UI.UILabel();
+            this.uiTextBox11 = new Sunny.UI.UITextBox();
+            this.uiTextBox12 = new Sunny.UI.UITextBox();
+            this.uiTextBox13 = new Sunny.UI.UITextBox();
+            this.uiTextBox14 = new Sunny.UI.UITextBox();
+            this.uiTextBox15 = new Sunny.UI.UITextBox();
+            this.uiTextBox16 = new Sunny.UI.UITextBox();
+            this.uiTextBox17 = new Sunny.UI.UITextBox();
+            this.uiTextBox18 = new Sunny.UI.UITextBox();
+            this.uiButton4 = new Sunny.UI.UIButton();
+            this.uiButton5 = new Sunny.UI.UIButton();
             this.uiTitlePanel1.SuspendLayout();
             this.uiTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -64,6 +87,7 @@
             this.uiGroupBox1.SuspendLayout();
             this.uiGroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiTitlePanel1
@@ -163,6 +187,70 @@
             this.uiGroupBox1.TabIndex = 0;
             this.uiGroupBox1.Text = "个人信息";
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiGroupBox3
+            // 
+            this.uiGroupBox3.Controls.Add(this.uiButton2);
+            this.uiGroupBox3.Controls.Add(this.pictureBox1);
+            this.uiGroupBox3.Controls.Add(this.uiButton1);
+            this.uiGroupBox3.Controls.Add(this.uiButton3);
+            this.uiGroupBox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiGroupBox3.Location = new System.Drawing.Point(728, 0);
+            this.uiGroupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiGroupBox3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiGroupBox3.Name = "uiGroupBox3";
+            this.uiGroupBox3.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
+            this.uiGroupBox3.Size = new System.Drawing.Size(377, 316);
+            this.uiGroupBox3.TabIndex = 23;
+            this.uiGroupBox3.Text = "个人信息";
+            this.uiGroupBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiButton2
+            // 
+            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton2.Location = new System.Drawing.Point(29, 278);
+            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton2.Name = "uiButton2";
+            this.uiButton2.Size = new System.Drawing.Size(100, 35);
+            this.uiButton2.TabIndex = 23;
+            this.uiButton2.Text = "打开本地";
+            this.uiButton2.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(4, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(370, 249);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // uiButton1
+            // 
+            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton1.Location = new System.Drawing.Point(158, 281);
+            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton1.Name = "uiButton1";
+            this.uiButton1.Size = new System.Drawing.Size(100, 35);
+            this.uiButton1.TabIndex = 22;
+            this.uiButton1.Text = "重新选择";
+            this.uiButton1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
+            // 
+            // uiButton3
+            // 
+            this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton3.Location = new System.Drawing.Point(274, 278);
+            this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton3.Name = "uiButton3";
+            this.uiButton3.Size = new System.Drawing.Size(100, 35);
+            this.uiButton3.TabIndex = 21;
+            this.uiButton3.Text = "确定";
+            this.uiButton3.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
             // 
             // uiComboBox3
             // 
@@ -382,78 +470,331 @@
             this.uiLabel1.Text = "姓名：";
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // uiLabel10
+            // 
+            this.uiLabel10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel10.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.uiLabel10.Location = new System.Drawing.Point(159, 49);
+            this.uiLabel10.Name = "uiLabel10";
+            this.uiLabel10.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel10.TabIndex = 0;
+            this.uiLabel10.Text = "账号：";
+            this.uiLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // uiLabel11
+            // 
+            this.uiLabel11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.uiLabel11.Location = new System.Drawing.Point(159, 159);
+            this.uiLabel11.Name = "uiLabel11";
+            this.uiLabel11.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel11.TabIndex = 1;
+            this.uiLabel11.Text = "密码：";
+            this.uiLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // uiLabel12
+            // 
+            this.uiLabel12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel12.Location = new System.Drawing.Point(159, 294);
+            this.uiLabel12.Name = "uiLabel12";
+            this.uiLabel12.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel12.TabIndex = 2;
+            this.uiLabel12.Text = "手机号：";
+            this.uiLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // uiLabel13
+            // 
+            this.uiLabel13.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel13.Location = new System.Drawing.Point(159, 97);
+            this.uiLabel13.Name = "uiLabel13";
+            this.uiLabel13.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel13.TabIndex = 6;
+            this.uiLabel13.Text = "账号：";
+            this.uiLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // uiLabel14
+            // 
+            this.uiLabel14.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel14.Location = new System.Drawing.Point(118, 200);
+            this.uiLabel14.Name = "uiLabel14";
+            this.uiLabel14.Size = new System.Drawing.Size(141, 25);
+            this.uiLabel14.TabIndex = 8;
+            this.uiLabel14.Text = "请输入更改密码：";
+            this.uiLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel15
+            // 
+            this.uiLabel15.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel15.Location = new System.Drawing.Point(76, 243);
+            this.uiLabel15.Name = "uiLabel15";
+            this.uiLabel15.Size = new System.Drawing.Size(174, 25);
+            this.uiLabel15.TabIndex = 10;
+            this.uiLabel15.Text = "请再次输入更改密码：";
+            this.uiLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.uiButton5);
+            this.tabPage2.Controls.Add(this.uiButton4);
+            this.tabPage2.Controls.Add(this.uiTextBox18);
+            this.tabPage2.Controls.Add(this.uiTextBox17);
+            this.tabPage2.Controls.Add(this.uiTextBox16);
+            this.tabPage2.Controls.Add(this.uiTextBox15);
+            this.tabPage2.Controls.Add(this.uiTextBox14);
+            this.tabPage2.Controls.Add(this.uiTextBox13);
+            this.tabPage2.Controls.Add(this.uiTextBox12);
+            this.tabPage2.Controls.Add(this.uiTextBox11);
+            this.tabPage2.Controls.Add(this.uiLabel17);
+            this.tabPage2.Controls.Add(this.uiLabel16);
+            this.tabPage2.Controls.Add(this.uiLabel15);
+            this.tabPage2.Controls.Add(this.uiLabel14);
+            this.tabPage2.Controls.Add(this.uiLabel13);
+            this.tabPage2.Controls.Add(this.uiLabel12);
+            this.tabPage2.Controls.Add(this.uiLabel11);
+            this.tabPage2.Controls.Add(this.uiLabel10);
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(989, 701);
+            this.tabPage2.Size = new System.Drawing.Size(1131, 701);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "账号设置";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // uiButton1
+            // uiTextBox6
             // 
-            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(22, 246);
-            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton1.Name = "uiButton1";
-            this.uiButton1.Size = new System.Drawing.Size(100, 35);
-            this.uiButton1.TabIndex = 19;
-            this.uiButton1.Text = "打开本地";
-            this.uiButton1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
+            this.uiTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox6.Location = new System.Drawing.Point(280, 49);
+            this.uiTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox6.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox6.Name = "uiTextBox6";
+            this.uiTextBox6.ReadOnly = true;
+            this.uiTextBox6.ShowText = false;
+            this.uiTextBox6.Size = new System.Drawing.Size(292, 29);
+            this.uiTextBox6.TabIndex = 3;
+            this.uiTextBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox6.Watermark = "";
             // 
-            // uiButton2
+            // uiTextBox7
             // 
-            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(148, 246);
-            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton2.Name = "uiButton2";
-            this.uiButton2.Size = new System.Drawing.Size(100, 35);
-            this.uiButton2.TabIndex = 20;
-            this.uiButton2.Text = "重新选择";
-            this.uiButton2.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
+            this.uiTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox7.Location = new System.Drawing.Point(280, 147);
+            this.uiTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox7.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox7.Name = "uiTextBox7";
+            this.uiTextBox7.PasswordChar = '*';
+            this.uiTextBox7.ReadOnly = true;
+            this.uiTextBox7.ShowText = false;
+            this.uiTextBox7.Size = new System.Drawing.Size(292, 35);
+            this.uiTextBox7.TabIndex = 4;
+            this.uiTextBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox7.Watermark = "";
             // 
-            // uiGroupBox3
+            // uiTextBox8
             // 
-            this.uiGroupBox3.Controls.Add(this.uiButton3);
-            this.uiGroupBox3.Controls.Add(this.pictureBox1);
-            this.uiGroupBox3.Controls.Add(this.uiButton2);
-            this.uiGroupBox3.Controls.Add(this.uiButton1);
-            this.uiGroupBox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiGroupBox3.Location = new System.Drawing.Point(696, 21);
-            this.uiGroupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiGroupBox3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiGroupBox3.Name = "uiGroupBox3";
-            this.uiGroupBox3.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            this.uiGroupBox3.Size = new System.Drawing.Size(400, 290);
-            this.uiGroupBox3.TabIndex = 21;
-            this.uiGroupBox3.Text = "uiGroupBox3";
-            this.uiGroupBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uiTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox8.Location = new System.Drawing.Point(280, 294);
+            this.uiTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox8.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox8.Name = "uiTextBox8";
+            this.uiTextBox8.ReadOnly = true;
+            this.uiTextBox8.ShowText = false;
+            this.uiTextBox8.Size = new System.Drawing.Size(292, 35);
+            this.uiTextBox8.TabIndex = 5;
+            this.uiTextBox8.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox8.Watermark = "";
             // 
-            // pictureBox1
+            // uiTextBox9
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(384, 204);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.uiTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox9.Location = new System.Drawing.Point(279, 97);
+            this.uiTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox9.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox9.Name = "uiTextBox9";
+            this.uiTextBox9.ShowText = false;
+            this.uiTextBox9.Size = new System.Drawing.Size(293, 29);
+            this.uiTextBox9.TabIndex = 7;
+            this.uiTextBox9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox9.Watermark = "";
             // 
-            // uiButton3
+            // uiTextBox10
             // 
-            this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton3.Location = new System.Drawing.Point(276, 246);
-            this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton3.Name = "uiButton3";
-            this.uiButton3.Size = new System.Drawing.Size(100, 35);
-            this.uiButton3.TabIndex = 21;
-            this.uiButton3.Text = "保存";
-            this.uiButton3.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
+            this.uiTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox10.Location = new System.Drawing.Point(279, 200);
+            this.uiTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox10.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox10.Name = "uiTextBox10";
+            this.uiTextBox10.ShowText = false;
+            this.uiTextBox10.Size = new System.Drawing.Size(293, 29);
+            this.uiTextBox10.TabIndex = 9;
+            this.uiTextBox10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox10.Watermark = "";
+            // 
+            // uiLabel16
+            // 
+            this.uiLabel16.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel16.Location = new System.Drawing.Point(46, 334);
+            this.uiLabel16.Name = "uiLabel16";
+            this.uiLabel16.Size = new System.Drawing.Size(221, 23);
+            this.uiLabel16.TabIndex = 11;
+            this.uiLabel16.Text = "请输入你需要更改的手机号：";
+            this.uiLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // uiLabel17
+            // 
+            this.uiLabel17.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel17.Location = new System.Drawing.Point(12, 381);
+            this.uiLabel17.Name = "uiLabel17";
+            this.uiLabel17.Size = new System.Drawing.Size(255, 23);
+            this.uiLabel17.TabIndex = 12;
+            this.uiLabel17.Text = "请再次输入你需要更改的手机号：";
+            this.uiLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // uiTextBox11
+            // 
+            this.uiTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox11.Location = new System.Drawing.Point(284, 42);
+            this.uiTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox11.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox11.Name = "uiTextBox11";
+            this.uiTextBox11.ReadOnly = true;
+            this.uiTextBox11.ShowText = false;
+            this.uiTextBox11.Size = new System.Drawing.Size(271, 29);
+            this.uiTextBox11.TabIndex = 13;
+            this.uiTextBox11.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox11.Watermark = "";
+            // 
+            // uiTextBox12
+            // 
+            this.uiTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox12.Location = new System.Drawing.Point(284, 97);
+            this.uiTextBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox12.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox12.Name = "uiTextBox12";
+            this.uiTextBox12.ShowText = false;
+            this.uiTextBox12.Size = new System.Drawing.Size(271, 29);
+            this.uiTextBox12.TabIndex = 14;
+            this.uiTextBox12.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox12.Watermark = "";
+            // 
+            // uiTextBox13
+            // 
+            this.uiTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox13.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox13.Location = new System.Drawing.Point(284, 159);
+            this.uiTextBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox13.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox13.Name = "uiTextBox13";
+            this.uiTextBox13.PasswordChar = '*';
+            this.uiTextBox13.ReadOnly = true;
+            this.uiTextBox13.ShowText = false;
+            this.uiTextBox13.Size = new System.Drawing.Size(271, 23);
+            this.uiTextBox13.TabIndex = 15;
+            this.uiTextBox13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox13.Watermark = "";
+            // 
+            // uiTextBox14
+            // 
+            this.uiTextBox14.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox14.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox14.Location = new System.Drawing.Point(284, 195);
+            this.uiTextBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox14.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox14.Name = "uiTextBox14";
+            this.uiTextBox14.PasswordChar = '*';
+            this.uiTextBox14.ShowText = false;
+            this.uiTextBox14.Size = new System.Drawing.Size(271, 29);
+            this.uiTextBox14.TabIndex = 16;
+            this.uiTextBox14.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox14.Watermark = "";
+            // 
+            // uiTextBox15
+            // 
+            this.uiTextBox15.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox15.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox15.Location = new System.Drawing.Point(284, 238);
+            this.uiTextBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox15.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox15.Name = "uiTextBox15";
+            this.uiTextBox15.PasswordChar = '*';
+            this.uiTextBox15.ShowText = false;
+            this.uiTextBox15.Size = new System.Drawing.Size(271, 29);
+            this.uiTextBox15.TabIndex = 17;
+            this.uiTextBox15.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox15.Watermark = "";
+            // 
+            // uiTextBox16
+            // 
+            this.uiTextBox16.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox16.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox16.Location = new System.Drawing.Point(284, 294);
+            this.uiTextBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox16.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox16.Name = "uiTextBox16";
+            this.uiTextBox16.PasswordChar = '*';
+            this.uiTextBox16.ReadOnly = true;
+            this.uiTextBox16.ShowText = false;
+            this.uiTextBox16.Size = new System.Drawing.Size(271, 29);
+            this.uiTextBox16.TabIndex = 18;
+            this.uiTextBox16.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox16.Watermark = "";
+            // 
+            // uiTextBox17
+            // 
+            this.uiTextBox17.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox17.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox17.Location = new System.Drawing.Point(284, 333);
+            this.uiTextBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox17.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox17.Name = "uiTextBox17";
+            this.uiTextBox17.ShowText = false;
+            this.uiTextBox17.Size = new System.Drawing.Size(271, 34);
+            this.uiTextBox17.TabIndex = 19;
+            this.uiTextBox17.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox17.Watermark = "";
+            // 
+            // uiTextBox18
+            // 
+            this.uiTextBox18.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox18.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox18.Location = new System.Drawing.Point(284, 381);
+            this.uiTextBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox18.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox18.Name = "uiTextBox18";
+            this.uiTextBox18.ShowText = false;
+            this.uiTextBox18.Size = new System.Drawing.Size(271, 29);
+            this.uiTextBox18.TabIndex = 20;
+            this.uiTextBox18.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox18.Watermark = "";
+            // 
+            // uiButton4
+            // 
+            this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton4.Location = new System.Drawing.Point(284, 469);
+            this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton4.Name = "uiButton4";
+            this.uiButton4.Size = new System.Drawing.Size(100, 35);
+            this.uiButton4.TabIndex = 21;
+            this.uiButton4.Text = "确定";
+            this.uiButton4.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // uiButton5
+            // 
+            this.uiButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton5.Location = new System.Drawing.Point(455, 469);
+            this.uiButton5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton5.Name = "uiButton5";
+            this.uiButton5.Size = new System.Drawing.Size(100, 35);
+            this.uiButton5.TabIndex = 22;
+            this.uiButton5.Text = "取消";
+            this.uiButton5.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // MainWindow
             // 
@@ -471,6 +812,7 @@
             this.uiGroupBox1.ResumeLayout(false);
             this.uiGroupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -480,7 +822,6 @@
         private Sunny.UI.UITitlePanel uiTitlePanel1;
         private Sunny.UI.UITabControl uiTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private Sunny.UI.UIGroupBox uiGroupBox2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Sunny.UI.UIGroupBox uiGroupBox1;
@@ -501,10 +842,34 @@
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UILabel uiLabel9;
         private Sunny.UI.UIComboBox uiComboBox3;
-        private Sunny.UI.UIButton uiButton2;
+        private Sunny.UI.UIButton uiButton3;
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UIGroupBox uiGroupBox3;
-        private Sunny.UI.UIButton uiButton3;
+        private Sunny.UI.UIButton uiButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private Sunny.UI.UIButton uiButton5;
+        private Sunny.UI.UIButton uiButton4;
+        private Sunny.UI.UITextBox uiTextBox18;
+        private Sunny.UI.UITextBox uiTextBox17;
+        private Sunny.UI.UITextBox uiTextBox16;
+        private Sunny.UI.UITextBox uiTextBox15;
+        private Sunny.UI.UITextBox uiTextBox14;
+        private Sunny.UI.UITextBox uiTextBox13;
+        private Sunny.UI.UITextBox uiTextBox12;
+        private Sunny.UI.UITextBox uiTextBox11;
+        private Sunny.UI.UILabel uiLabel17;
+        private Sunny.UI.UILabel uiLabel16;
+        private Sunny.UI.UILabel uiLabel15;
+        private Sunny.UI.UILabel uiLabel14;
+        private Sunny.UI.UILabel uiLabel13;
+        private Sunny.UI.UILabel uiLabel12;
+        private Sunny.UI.UILabel uiLabel11;
+        private Sunny.UI.UILabel uiLabel10;
+        private Sunny.UI.UITextBox uiTextBox6;
+        private Sunny.UI.UITextBox uiTextBox7;
+        private Sunny.UI.UITextBox uiTextBox8;
+        private Sunny.UI.UITextBox uiTextBox9;
+        private Sunny.UI.UITextBox uiTextBox10;
     }
 }

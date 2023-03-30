@@ -20,7 +20,7 @@ namespace AD.CoreERP.AD.CoreClientSystem.AD.CoreWindowSys
 
         private RigisterWindow RegisterWindow = null;
 
-        private IFreeSql _freeSql = FreeSqlHelper.ServerSql;
+        private IFreeSql _freeSql = FreeSqlHelper.Sqlite;
         /// <summary>
         /// 
         /// </summary>
@@ -33,7 +33,7 @@ namespace AD.CoreERP.AD.CoreClientSystem.AD.CoreWindowSys
         {
             try 
             {
-                var pos = _freeSql.Select<RegisterTable>().Where(a => a.Account == acc && a.Password == pass ).ToOne();
+                var pos = _freeSql.Select<RegisterTable>().Where(a => a.Account == acc && a.Password == pass &&a.TelPhone==telPhone).ToOne();
                 if (pos != null)
                 {
                     return false;
