@@ -7,13 +7,27 @@ using System.Threading.Tasks;
 
 namespace AD.CoreCommon.DataModel.ClientData 
 {
-    /// <summary>
-    /// 用户信息基类
-    /// </summary>
-    public class UserData
+    public class DepartMentModel
     {
         [Column(IsIdentity = true, IsPrimary = true)]
         public int id { get; set; }
+        public string departMentName { get;set; }
+        public string departIntroduce { get;set; }
+        public byte[] departPicture { get; set; }
+       
+        
+    }
+
+    public class  DepartData
+    {
+        [Column(IsIdentity = true, IsPrimary = true)]
+        public int id { get; set; }
+        public  string DepartName { get; set; }
+        public   DepartMemberData DepartMemberData { get; set; }
+    }
+
+    public class DepartMemberData
+    {
         /// <summary>
         /// 账号
         /// </summary>
@@ -26,6 +40,10 @@ namespace AD.CoreCommon.DataModel.ClientData
         /// 手机号
         /// </summary>
         public string TelPhone { get; set; }
+        /// <summary>
+        /// 是否是 部长
+        /// </summary>
+        public  bool IsDepartManager { get; set; }
         /// <summary>
         /// 部门信息
         /// </summary>
@@ -46,7 +64,9 @@ namespace AD.CoreCommon.DataModel.ClientData
         /// 身份证号码
         /// </summary>
         public int IDPassword { get; set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public string StartWorkTime { get; set; }   
         /// <summary>
         /// 邮箱
@@ -56,7 +76,5 @@ namespace AD.CoreCommon.DataModel.ClientData
         /// 
         /// </summary>
         public byte[] personDataPicture { get; set; }  
-
-
     }
 }

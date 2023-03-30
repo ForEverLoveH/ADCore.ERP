@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AD.Core.DepartMentManager;
 using AD.CoreERP.AD.CoreClientSystem.AD.CoreWindowSys;
 using AD.CoreERP.Other.OtherManager.OtherManagerWindowSys;
 
@@ -26,6 +27,8 @@ namespace AD.CoreERP
         #region 工厂管理
          FactoryManager.FactoryManager.FactoryManagerWindowSys.MainWindowSys mainWindowSys = new FactoryManager.FactoryManager.FactoryManagerWindowSys.MainWindowSys();
         #endregion
+
+        private static DepartMentManager _departMentManager = new DepartMentManager();
 
         #region 其它人员
         private Other.OtherManager.OtherManagerWindowSys.MainWindowSys  MainWindowSys = new MainWindowSys();
@@ -53,6 +56,8 @@ namespace AD.CoreERP
             #region 工厂管理
             mainWindowSys.Awake();
             #endregion
+            
+            _departMentManager.Awake();
             # region  其它人员
             MainWindowSys.Awake();
             

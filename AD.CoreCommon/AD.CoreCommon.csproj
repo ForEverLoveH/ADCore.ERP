@@ -96,12 +96,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataModel\ClientData\DepartMentModel\DepartMentModel.cs" />
-    <Compile Include="DataModel\ClientData\Helper\ImageHelper\ImageHelper.cs" />
-    <Compile Include="DataModel\ClientData\LoginGameModel\RegisterTable.cs" />
-    <Compile Include="DataModel\ClientData\RegexHelper\RegexHelper.cs" />
-    <Compile Include="DataModel\ClientData\TaskModel\PersonTaskDataModel.cs" />
-    <Compile Include="DataModel\ClientData\UserData\UserData.cs" />
+    <Compile Include="DataModel\ClientData\ClientSQLData\DepartMentModel\DepartMentModel.cs" />
+    <Compile Include="DataModel\ClientData\ClientSQLData\LoginGameModel\RegisterTable.cs" />
+    <Compile Include="DataModel\ClientData\ClientSQLData\TaskModel\PersonTaskDataModel.cs" />
+    <Compile Include="DataModel\ClientData\ClientSQLData\UserData\UserData.cs" />
+    <Compile Include="DataModel\ClientData\GameHelper\ImageHelper\ImageHelper.cs" />
+    <Compile Include="DataModel\ClientData\GameHelper\RegexHelper\RegexHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +113,9 @@
       <Project>{e50d47ad-0217-4d52-9491-06ecadacb12b}</Project>
       <Name>GameLog</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataModel\ClientData\ClientSQLData" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

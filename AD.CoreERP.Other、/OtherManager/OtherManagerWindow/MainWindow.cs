@@ -66,7 +66,12 @@ namespace AD.CoreERP.Other_.OtherManager.OtherManagerWindow
             }
             else if(uiTabControl1.SelectedIndex == 1) 
             {
-
+                if (registerTable != null)
+                {
+                    uiTextBox11.Text = registerTable.Account;
+                    uiTextBox13.Text = registerTable.Password;
+                    uiTextBox16.Text = registerTable.TelPhone;
+                }
             }
         }
 
@@ -193,6 +198,45 @@ namespace AD.CoreERP.Other_.OtherManager.OtherManagerWindow
             {
                 return;
             }
+        }
+
+        private void uiButton4_Click(object sender, EventArgs e)
+        {
+            var account = uiTextBox12.Text.Trim();
+            var pass = uiTextBox14.Text.Trim();
+            var passs = uiTextBox15.Text.Trim();
+            var tel = uiTextBox17.Text.Trim();
+            var aTEL = uiTextBox18.Text.Trim();
+            if (!string.IsNullOrEmpty(account)&&!string.IsNullOrEmpty(pass)&&!string.IsNullOrEmpty(passs)&&!string.IsNullOrEmpty(tel)&&!string.IsNullOrEmpty(aTEL))
+            {
+                if (pass==passs)
+                {
+                    if (tel == aTEL)
+                    {
+                        MainWindowSys.Instance.ChangePersonData(registerTable, account, pass, tel);
+                    }
+                }
+            }
+        }
+
+        private void uiButton5_Click(object sender, EventArgs e)
+        {
+            ClearData();
+            if (registerTable != null)
+            {
+                uiTextBox11.Text = registerTable.Account;
+                uiTextBox13.Text = registerTable.Password;
+                uiTextBox16.Text = registerTable.TelPhone;
+            }
+        }
+
+        private void ClearData()
+        {
+            uiTextBox12.Text = string.Empty;
+            uiTextBox14.Text = string.Empty;
+            uiTextBox15.Text = string.Empty;
+            uiTextBox17.Text = string.Empty;
+            uiTextBox18.Text = string.Empty;
         }
     }
 }

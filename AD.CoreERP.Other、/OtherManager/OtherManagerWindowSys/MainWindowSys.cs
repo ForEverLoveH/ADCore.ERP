@@ -194,7 +194,41 @@ namespace AD.CoreERP.Other.OtherManager.OtherManagerWindowSys
                 else return false;
             }
             else return true;
-        
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="registerTable"></param>
+        /// <param name="account"></param>
+        /// <param name="pass"></param>
+        /// <param name="tel"></param>
+        /// <returns></returns>
+        public bool ChangePersonData(RegisterTable registerTable, string account, string pass, string tel)
+        {
+            if (ClearDataBase(registerTable.Account, registerTable.TelPhone, registerTable.Password))
+            {
+                RegisterTable registerTables = new RegisterTable()
+                {
+                    Account = account,
+                    Password = pass,
+                    TelPhone = tel,
+                    HandleState = registerTable.HandleState,
+                    Department = registerTable.Department,
+                    Email = registerTable.Email,
+                    familyAddress = registerTable.familyAddress,
+                    NowAddress = registerTable.NowAddress,
+                    SalaryData = registerTable.SalaryData,
+                    PersonIDCard = registerTable.PersonIDCard,
+                    PersonPicture = registerTable.PersonPicture,
+                };
+                int result = freeSql.InsertOrUpdate<RegisterTable>().SetSource(registerTables).ExecuteAffrows();
+                if (result == 1) return true;
+                else { return false; }
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

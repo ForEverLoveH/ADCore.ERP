@@ -14,6 +14,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.Design;
 using System.Windows.Forms;
+using AD.Core.DepartMentManager;
+using AD.CoreCommon.DataModel.ClientData;
 
 namespace AD.CoreERP.AD.CoreWindow
 {
@@ -42,20 +44,42 @@ namespace AD.CoreERP.AD.CoreWindow
              
             if (!string.IsNullOrEmpty(acc )&&!string.IsNullOrEmpty(pass))
             {
-                int sl = LoginWindowSys.Instance.LoginGame(acc, pass);
+                int sl=-2;
+                bool IsPhone = RegexHelper.CheckMobilePhone(acc);
+                if (IsPhone)
+                {
+                    sl  = LoginWindowSys.Instance.LoginGameByPhoneNumber(acc, pass);
+                }
+                else
+                {
+                    sl = LoginWindowSys.Instance.LoginGameByAccount(acc, pass);
+                }
+
                 if ( sl==0)
                 {
                     UIMessageBox.ShowWarning("请完善你的身份信息");
                     LoginWindowSys.Instance.ShowOtherFactoryPersonWindow(acc, pass);
-                    
                 }
                 else if (sl == -1)
                 {
-
+                    
                 }
                 else if (sl == 1)
                 {
+                    if (LoginWindowSys.Instance.SelectCurrentLoginMessageFactoryManager(acc, pass, IsPhone))
+                    {
+                        
+                    }
+                    else
+                    {
+                        string departName = LoginWindowSys.Instance.SelectCurrentLoginMessageDepartMentData(acc, pass, IsPhone );
+                        if (!string.IsNullOrEmpty(departName))
+                        {
+                            LoginWindowSys.Instance.ShowDepartMentWindow(departName, acc, pass,IsPhone);
 
+                        }
+                    }
+                    
                 }
                 else if(sl == 2)
                 {

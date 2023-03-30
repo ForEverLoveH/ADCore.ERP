@@ -185,6 +185,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AD.Core.DepartMentManager\AD.Core.DepartMentManager.csproj">
+      <Project>{0f374e43-9f1b-4636-aae5-b4c534527da8}</Project>
+      <Name>AD.Core.DepartMentManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AD.CoreCommon\AD.CoreCommon.csproj">
       <Project>{92b16739-378b-460c-b867-2f6c324cc4ae}</Project>
       <Name>AD.CoreCommon</Name>

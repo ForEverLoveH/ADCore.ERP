@@ -9,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AD.Core.DepartMentManager;
 using AD.CoreCommon.DataModel.ClientData;
 using AD.CoreERP.AD.CoreClientSystem.AD.CoreWindowSys;
 using AD.CoreERP.Other.OtherManager.OtherManagerWindowSys;
@@ -26,29 +27,14 @@ namespace AD.CoreERP.AD.CoreWindowSys
         {
             Instance = this;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="acc"></param>
-        /// <param name="pass"></param>
-        public  int  LoginGame(string acc, string pass  )
-        {
-            if(RegexHelper.CheckMobilePhone(acc))
-            {
-               return  LoginGameByPhoneNumber(acc, pass );
-            }
-            else
-            {
-                return LoginGameByAccount(acc, pass );
-            }
-        }
+       
          /// <summary>
          /// 一手机号
          /// </summary>
          /// <param name="acc"></param>
          /// <param name="pass"></param>
          /// <returns></returns>
-         private int LoginGameByPhoneNumber(string acc, string pass  )
+         public int LoginGameByPhoneNumber(string acc, string pass  )
          {
             var sl = _freeSql.Select<RegisterTable>().Where(a => a.TelPhone == acc && a.Password == pass).ToOne();
             if (sl != null)
@@ -70,9 +56,9 @@ namespace AD.CoreERP.AD.CoreWindowSys
             {
                var pl = _freeSql.Select<UserData>().Where(a => a.TelPhone == acc && a.Password == pass).ToOne();
                if (pl == null)
-                {
-                    UIMessageBox.ShowError("当前数据不存在系统中，请注册！！");
-                    return -1;
+               {
+                   UIMessageBox.ShowError("当前数据不存在系统中，请注册！！");
+                   return -1;
                }
                else
                {
@@ -88,7 +74,7 @@ namespace AD.CoreERP.AD.CoreWindowSys
         /// <param name="pass"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        private int LoginGameByAccount (string acc, string pass)
+        public int LoginGameByAccount (string acc, string pass)
         { 
             var sl = _freeSql.Select<RegisterTable>().Where(a => a.Account == acc && a.Password == pass).ToOne();
             if (sl != null)
@@ -154,6 +140,81 @@ namespace AD.CoreERP.AD.CoreWindowSys
         public void ShowOtherFactoryPersonWindow(string acc,string pass)
         {
             Other.OtherManager.OtherManagerWindowSys. MainWindowSys.Instance.ShowOtherMainWindow(acc, pass,_freeSql);
+        }
+
+       
+        /// <summary>
+        /// 查询当前登录的是不是工厂管理员
+        /// </summary>
+        /// <param name="acc"></param>
+        /// <param name="pass"></param>
+        /// <param name="isPhone"></param>
+        /// <exception cref="NotImplementedException"></exception>
+        public bool  SelectCurrentLoginMessageFactoryManager(string acc, string pass, bool isPhone)
+        {
+            if (isPhone)
+            {
+                var pl = _freeSql.Select<UserData>().Where(a => a.TelPhone == acc && a.Password == pass).ToOne();
+                if (pl != null)
+                {
+                    if (pl.IsFactoryManager)
+                        return true;
+                    else
+                        return false;
+                }
+                else
+                    return false;
+            }
+            else
+            {
+                var pl = _freeSql.Select<UserData>().Where(a => a.Account == acc && a.Password == pass).ToOne();
+                if (pl != null)
+                {
+                    if (pl.IsFactoryManager)
+                        return true;
+                    else
+                        return false;
+                }
+                else
+                    return false;
+                
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="acc"></param>
+        /// <param name="pass"></param>
+        /// <param name="isPhone"></param>
+        /// <param name="departName"></param>
+        /// <returns></returns>
+        public string  SelectCurrentLoginMessageDepartMentData(string acc, string pass, bool isPhone )
+        {
+            if (isPhone)
+            {
+                var pl = _freeSql.Select<UserData>().Where(a => a.TelPhone == acc && a.Password == pass).ToOne();
+                if (pl != null)
+                {
+                    return pl.DepartMent;
+                }
+                else
+                    return null;
+            }
+            else
+            {
+                var pl = _freeSql.Select<UserData>().Where(a => a.Account == acc && a.Password == pass).ToOne();
+                if (pl != null)
+                {
+                    return pl.DepartMent;
+                }
+                else
+                    return null;
+            }
+        }
+
+        public void ShowDepartMentWindow(string departName, string acc, string pass, bool isPhone)
+        {
+             DepartMentManager.Instance.ShowDepartMentWindow(departName,acc,pass,_freeSql,isPhone);
         }
     }
 }
