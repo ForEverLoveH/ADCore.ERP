@@ -112,7 +112,6 @@ D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\System.Runti
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\System.ValueTuple.dll
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\log4net.dll
-D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\ZstdNet.dll
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\AD.CoreCommon.pdb
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\AD.CoreCommon.dll.config
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\AD.CoreERP.FactoryManager.pdb
@@ -160,3 +159,6 @@ D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\FreeSql.Prov
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\System.Data.SQLite.dll
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\FreeSql.Provider.Sqlite.pdb
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\System.Data.SQLite.xml
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\AD.Core.DepartMentManager.exe
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\AD.Core.DepartMentManager.pdb
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP\bin\Debug\AD.Core.DepartMentManager.exe.config

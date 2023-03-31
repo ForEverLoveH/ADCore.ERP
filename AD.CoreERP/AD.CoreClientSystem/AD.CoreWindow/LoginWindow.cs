@@ -55,7 +55,7 @@ namespace AD.CoreERP.AD.CoreWindow
                     sl = LoginWindowSys.Instance.LoginGameByAccount(acc, pass);
                 }
 
-                if ( sl==0)
+                if (sl==0)
                 {
                     UIMessageBox.ShowWarning("请完善你的身份信息");
                     LoginWindowSys.Instance.ShowOtherFactoryPersonWindow(acc, pass);
