@@ -16,5 +16,10 @@ namespace AD.CoreERP.FactoryManager.FactoryManager.FactoryManagerWindow
         {
             InitializeComponent();
         }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+             
+        }
     }
 }

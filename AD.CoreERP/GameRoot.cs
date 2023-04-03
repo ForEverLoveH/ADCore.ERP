@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AD.Core.DepartMentManager;
+using AD.Core.DepartMentManager.DepartMentManagerWindowSys;
 using AD.CoreERP.AD.CoreClientSystem.AD.CoreWindowSys;
 using AD.CoreERP.Other.OtherManager.OtherManagerWindowSys;
 
@@ -28,13 +29,19 @@ namespace AD.CoreERP
          FactoryManager.FactoryManager.FactoryManagerWindowSys.MainWindowSys mainWindowSys = new FactoryManager.FactoryManager.FactoryManagerWindowSys.MainWindowSys();
         #endregion
 
+        #region 部门信息
         private static DepartMentManager _departMentManager = new DepartMentManager();
+        private static DevelopDepartMentManagerWindowSys DepartMentManagerWindowSys = new DevelopDepartMentManagerWindowSys();
+        private static FinanceDepartmentManagerWindowSys FinanceDepartmentManagerWindowSys = new FinanceDepartmentManagerWindowSys();
+        private static LogisticsDepartmentManagerWindowSys LogisticsDepartmentManagerWindowSys = new LogisticsDepartmentManagerWindowSys();
+        private static MarketDepartMentManagerWindowSys MarketDepartMentManagerWindowSys = new MarketDepartMentManagerWindowSys();
+        
+
+        #endregion
+        
 
         #region 其它人员
         private Other.OtherManager.OtherManagerWindowSys.MainWindowSys  MainWindowSys = new MainWindowSys();
-        
-       
-        
         #endregion
 
 

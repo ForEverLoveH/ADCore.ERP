@@ -76,11 +76,7 @@
             navigationMenuItem4.ShowTip = false;
             navigationMenuItem4.Text = "菜单4";
             navigationMenuItem4.TipText = null;
-            this.ucNavigationMenu1.Items = new HZH_Controls.Controls.NavigationMenuItem[] {
-        navigationMenuItem1,
-        navigationMenuItem2,
-        navigationMenuItem3,
-        navigationMenuItem4};
+            this.ucNavigationMenu1.Items = new HZH_Controls.Controls.NavigationMenuItem[] { navigationMenuItem1, navigationMenuItem2, navigationMenuItem3, navigationMenuItem4 };
             this.ucNavigationMenu1.Location = new System.Drawing.Point(1, 1);
             this.ucNavigationMenu1.Name = "ucNavigationMenu1";
             this.ucNavigationMenu1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -96,8 +92,8 @@
             this.Controls.Add(this.ucNavigationMenu1);
             this.Name = "MainWindow";
             this.Text = "MainWindow";
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);
-
         }
 
         #endregion
