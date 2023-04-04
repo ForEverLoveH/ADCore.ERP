@@ -1,14 +1,22 @@
+using AD.Core.DepartMentManager.DepartMentManagerWindowSys;
+using AD.CoreCommon.DataModel.ClientData;
 using System.Windows.Forms;
 
 namespace AD.Core.DepartMentManager.DepartMent.DepartManagerWindow
 {
     public partial class PersonDepartMentManagerWindow : Form
     {
+        public string DepartName { get; internal set; }
+        public string Password { get; internal set; }
+        public string Account { get; internal set; }
+        public string Telphone { get; internal set; }
+
         public PersonDepartMentManagerWindow()
         {
             InitializeComponent();
         }
-
+        DepartData departData = new DepartData();
+        
         private void ucNavigationMenu1_ClickItemed(object sender, System.EventArgs e)
         {
             var sl = ucNavigationMenu1.SelectItem;
@@ -17,36 +25,50 @@ namespace AD.Core.DepartMentManager.DepartMent.DepartManagerWindow
                 var txt = sl.Text.Trim();
                 if (!string.IsNullOrEmpty(txt))
                 {
-                    switch(txt)
+                    switch (txt)
                     {
-                        case "ÈÎÎñ¹ÜÀí"://Ö÷ÒªÊÇ¸ºÔğ½ÓÊÕÀ´×Ô¹¤³§¹ÜÀíÕßµÄÈÎÎñ£¬ÒÔ¼°·ÖÅäÈÕ ÔÂ ÈÎÎñ¸ø¸÷¸öĞ¡×é
+                        case "ä»»åŠ¡ç®¡ç†"://ä¸»è¦æ˜¯è´Ÿè´£æ¥æ”¶æ¥è‡ªå·¥å‚ç®¡ç†è€…çš„ä»»åŠ¡ï¼Œä»¥åŠåˆ†é…æ—¥ æœˆ ä»»åŠ¡ç»™å„ä¸ªå°ç»„
 
                             break;
-                        case "ÃæÊÔÏµÍ³": //Ö÷ÒªÊÇ¸ºÔğ½ÓÊÕºÍ·ÖÅäÃæÊÔÈÎÎñ¸ø¸÷×é
+                        case "é¢è¯•ç³»ç»Ÿ": //ä¸»è¦æ˜¯è´Ÿè´£æ¥æ”¶å’Œåˆ†é…é¢è¯•ä»»åŠ¡ç»™å„ç»„
 
                             break;
-                        case "ÉÏ´«ÏµÍ³": //Ö÷ÒªÊÇ½«ÃæÊÔ½á¹û¸ù¾İ²¿ÃÅ¹ØÏµ£¬ÉÏ´«¸ø¸÷¸ö²¿ÃÅ²¿³¤
+                        case "ä¸Šä¼ ç³»ç»Ÿ": //ä¸»è¦æ˜¯å°†é¢è¯•ç»“æœæ ¹æ®éƒ¨é—¨å…³ç³»ï¼Œä¸Šä¼ ç»™å„ä¸ªéƒ¨é—¨éƒ¨é•¿
 
                             break;
-                        case "³ÉÔ±¹ÜÀí": //³ÉÔ±¹ÜÀíÏµÍ³
+                        case "æˆå‘˜ç®¡ç†": //æˆå‘˜ç®¡ç†ç³»ç»Ÿ
 
                             break;
-                        case "¹ÍÓ¶ÏµÍ³": //Ö÷ÒªÊÇ´¦ÀíÔÚÃæÊÔÍê³ÉÖ®ºó£¬½«ÈËÔ±Ãûµ¥ÉÏ´«¸ø¸÷¸ö²¿ÃÅÖ®ºóµÄ·´À¡
+                        case "é›‡ä½£ç³»ç»Ÿ": //ä¸»è¦æ˜¯å¤„ç†åœ¨é¢è¯•å®Œæˆä¹‹åï¼Œå°†äººå‘˜åå•ä¸Šä¼ ç»™å„ä¸ªéƒ¨é—¨ä¹‹åçš„åé¦ˆ
 
                             break;
                     }
                 }
+                else
+                    return;
+
             }
+            else
+                return;
         }
 
         private void uiTabControl1_SelectedIndexChanged(object sender, System.EventArgs e)
         {
+            if (uiTabControl1.SelectedIndex == 0)
+            {
+                 
+            }
+            if(uiTabControl1.SelectedIndex == 1)
+            {
 
+            }
         }
 
         private void PersonDepartMentManagerWindow_Load(object sender, System.EventArgs e)
         {
-
+            Control.CheckForIllegalCrossThreadCalls = false;
+            departData = PersonDepartMentManagerWindowSys.Instance.LoadingPersonDepartManagerData(DepartName, Account, Telphone, Password);
+            uiTabControl1.SelectedIndex = 0;
         }
     }
 }

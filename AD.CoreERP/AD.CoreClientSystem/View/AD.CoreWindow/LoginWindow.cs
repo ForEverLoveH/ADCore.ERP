@@ -141,6 +141,7 @@ namespace AD.CoreERP.AD.CoreWindow
         private void LoginWindow_Load(object sender, EventArgs e)
         {
             uiTabControl1.SelectedIndex= 0;
+            Control.CheckForIllegalCrossThreadCalls = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

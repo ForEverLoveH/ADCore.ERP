@@ -1,6 +1,5 @@
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.csproj.AssemblyReference.cache
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.csproj.SuggestedBindingRedirects.cache
-D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.exe.config
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.Properties.Resources.resources
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.csproj.GenerateResource.cache
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.csproj.CoreCompileInputs.cache
@@ -17,3 +16,7 @@ D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Deb
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.csproj.CopyComplete
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.exe
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.pdb
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\HZH_Controls.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\SunnyUI.Common.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\SunnyUI.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.DepartMent.DepartManagerWindow.PersonDepartMentManagerWindow.resources

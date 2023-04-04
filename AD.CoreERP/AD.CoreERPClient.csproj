@@ -134,31 +134,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AD.CoreClientSystem\AD.CoreWindowSys\LoginWindowSys.cs" />
-    <Compile Include="AD.CoreClientSystem\AD.CoreWindowSys\RigisterWindowSys.cs" />
-    <Compile Include="AD.CoreClientSystem\AD.CoreWindow\LoginWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AD.CoreClientSystem\AD.CoreWindow\LoginWindow.Designer.cs">
-      <DependentUpon>LoginWindow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AD.CoreClientSystem\AD.CoreWindow\RigisterWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AD.CoreClientSystem\AD.CoreWindow\RigisterWindow.Designer.cs">
-      <DependentUpon>RigisterWindow.cs</DependentUpon>
-    </Compile>
     <Compile Include="AD.CoreClientSystem\GameHelper\FreeSqlHelper.cs" />
     <Compile Include="AD.CoreClientSystem\GameHelper\ImageHelper.cs" />
     <Compile Include="AD.CoreClientSystem\GameHelper\WriteLogHelper.cs" />
     <Compile Include="AD.CoreClientSystem\ImageCode\ImageCode.cs" />
+    <Compile Include="AD.CoreClientSystem\View\AD.CoreWindowSys\LoginWindowSys.cs" />
+    <Compile Include="AD.CoreClientSystem\View\AD.CoreWindowSys\RigisterWindowSys.cs" />
+    <Compile Include="AD.CoreClientSystem\View\AD.CoreWindow\LoginWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AD.CoreClientSystem\View\AD.CoreWindow\LoginWindow.Designer.cs">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AD.CoreClientSystem\View\AD.CoreWindow\RigisterWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AD.CoreClientSystem\View\AD.CoreWindow\RigisterWindow.Designer.cs">
+      <DependentUpon>RigisterWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameRoot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AD.CoreClientSystem\AD.CoreWindow\LoginWindow.resx">
+    <EmbeddedResource Include="AD.CoreClientSystem\View\AD.CoreWindow\LoginWindow.resx">
       <DependentUpon>LoginWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AD.CoreClientSystem\AD.CoreWindow\RigisterWindow.resx">
+    <EmbeddedResource Include="AD.CoreClientSystem\View\AD.CoreWindow\RigisterWindow.resx">
       <DependentUpon>RigisterWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -209,6 +209,7 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

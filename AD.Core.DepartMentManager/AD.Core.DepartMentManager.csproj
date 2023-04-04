@@ -101,6 +101,9 @@
     <EmbeddedResource Include="DepartMentManager\DepartManagerWindow\人事部部长\Window\PersonDepartMentManagerWindow.resx">
       <DependentUpon>PersonDepartMentManagerWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DepartMentManager\DepartManagerWindow\开发部部长\Window\DevelopDepartMentManagerWindow.resx">
+      <DependentUpon>DevelopDepartMentManagerWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -128,6 +131,10 @@
     <ProjectReference Include="..\AD.CoreCommon\AD.CoreCommon.csproj">
       <Project>{92b16739-378b-460c-b867-2f6c324cc4ae}</Project>
       <Name>AD.CoreCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameLog\GameLog.csproj">
+      <Project>{e50d47ad-0217-4d52-9491-06ecadacb12b}</Project>
+      <Name>GameLog</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
