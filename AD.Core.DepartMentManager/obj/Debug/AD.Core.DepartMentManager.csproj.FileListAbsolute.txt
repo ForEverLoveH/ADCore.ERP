@@ -20,3 +20,10 @@ D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Deb
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\SunnyUI.Common.dll
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\SunnyUI.dll
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.DepartMent.DepartManagerWindow.PersonDepartMentManagerWindow.resources
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\GameLog.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\log4net.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\Serilog.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\GameLog.pdb
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\log4net.xml
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\Serilog.xml
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.DepartMent.DepartManagerWindow.DevelopDepartMentManagerWindow.resources

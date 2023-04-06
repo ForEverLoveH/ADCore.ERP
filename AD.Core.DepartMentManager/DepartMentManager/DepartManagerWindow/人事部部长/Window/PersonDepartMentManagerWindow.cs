@@ -1,5 +1,8 @@
 using AD.Core.DepartMentManager.DepartMentManagerWindowSys;
 using AD.CoreCommon.DataModel.ClientData;
+using Sunny.UI;
+using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace AD.Core.DepartMentManager.DepartMent.DepartManagerWindow
@@ -54,13 +57,39 @@ namespace AD.Core.DepartMentManager.DepartMent.DepartManagerWindow
 
         private void uiTabControl1_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            if (uiTabControl1.SelectedIndex == 0)
+            if (departData != null)
             {
-                 
+                if (uiTabControl1.SelectedIndex == 0)
+                {
+
+                }
+                if (uiTabControl1.SelectedIndex == 1)
+                {
+                    LoadingCurrentData();
+                }
             }
-            if(uiTabControl1.SelectedIndex == 1)
+            else
             {
 
+                return;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+
+        private void LoadingCurrentData()
+        {
+            if(departData != null)
+            {
+                uiTextBox1.Text = departData.DepartMemberData.Account;
+                uiTextBox3.Text = departData.DepartMemberData.TelPhone;
+                uiTextBox5.Text = departData.DepartMemberData.Password;
+                pictureBox1.Image = ImageHelper.BytesToBitmap(departData.DepartMemberData.personDataPicture);
+            }
+            else
+            {
+                return;
             }
         }
 
@@ -69,6 +98,60 @@ namespace AD.Core.DepartMentManager.DepartMent.DepartManagerWindow
             Control.CheckForIllegalCrossThreadCalls = false;
             departData = PersonDepartMentManagerWindowSys.Instance.LoadingPersonDepartManagerData(DepartName, Account, Telphone, Password);
             uiTabControl1.SelectedIndex = 0;
+        }
+       private  Bitmap bitmap= null;
+        /// <summary>
+        /// 选择本地
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void uiButton1_Click(object sender, System.EventArgs e)
+        {
+            ChooseLocalImageFile();
+        }
+
+        private void ChooseLocalImageFile()
+        {
+            string path = PersonDepartMentManagerWindowSys.Instance.OpenLocalImageFile();
+            if (!string.IsNullOrEmpty(path))
+            {
+                bitmap = (Bitmap)Image.FromFile(path);
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = bitmap;
+            }
+            else
+            {
+                UIMessageBox.ShowError("打开文件失败！！");
+                return;
+            }
+        }
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = null;pictureBox1.Image.Dispose();
+            bitmap = null;
+            ChooseLocalImageFile();
+
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            var acc =uiTextBox2.Text.Trim();
+            var tel = uiTextBox4.Text.Trim();
+            var pass=uiTextBox6.Text.Trim();
+            if(!string.IsNullOrEmpty(acc) || !string.IsNullOrEmpty(tel) || !string.IsNullOrEmpty(pass))
+            {
+
+            }
+            else if(!string.IsNullOrEmpty(acc)||!string.IsNullOrEmpty(tel  )||string.IsNullOrEmpty(pass )) 
+            {
+
+            }
+            else if(string.IsNullOrEmpty(acc) || !string.IsNullOrEmpty(tel) ||string.IsNullOrEmpty(pass))
+            {
+
+            }
+
         }
     }
 }
