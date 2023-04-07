@@ -94,3 +94,13 @@ D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\obj\Debug\AD.CoreCo
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\obj\Debug\AD.CoreCommon.csproj.CopyComplete
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\obj\Debug\AD.CoreCommon.dll
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\obj\Debug\AD.CoreCommon.pdb
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\bin\Debug\EntityFramework.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\bin\Debug\EntityFramework.SqlServer.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\bin\Debug\System.Data.SQLite.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\bin\Debug\System.Data.SQLite.EF6.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\bin\Debug\System.Data.SQLite.Linq.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\bin\Debug\EntityFramework.xml
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\bin\Debug\EntityFramework.SqlServer.xml
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\bin\Debug\System.Data.SQLite.xml
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\obj\Debug\AD.CoreCommon.CommonControll.PersonDataControll.resources
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreCommon\obj\Debug\AD.CoreCommon.csproj.GenerateResource.cache

@@ -54,3 +54,5 @@ D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.Other、\obj\Debug\AD.
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.Other、\obj\Debug\AD.CoreERP.OtherManager.csproj.CopyComplete
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.Other、\obj\Debug\AD.CoreERP.OtherManager.exe
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.Other、\obj\Debug\AD.CoreERP.OtherManager.pdb
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.Other、\bin\Debug\System.Data.SQLite.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.Other、\bin\Debug\System.Data.SQLite.xml

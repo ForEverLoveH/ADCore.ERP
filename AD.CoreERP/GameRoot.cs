@@ -30,7 +30,7 @@ namespace AD.CoreERP
         #endregion
 
         #region 部门信息
-        private static DepartMentManager _departMentManager = new DepartMentManager();
+        private static DepartMentManagerDatas _departMentManager = new DepartMentManagerDatas();
         private static DevelopDepartMentManagerWindowSys DepartMentManagerWindowSys = new DevelopDepartMentManagerWindowSys();
         private static FinanceDepartmentManagerWindowSys FinanceDepartmentManagerWindowSys = new FinanceDepartmentManagerWindowSys();
         private static LogisticsDepartmentManagerWindowSys LogisticsDepartmentManagerWindowSys = new LogisticsDepartmentManagerWindowSys();

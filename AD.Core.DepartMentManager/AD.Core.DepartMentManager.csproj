@@ -60,48 +60,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DepartMentManager\DepartManagerWindow\人事部部长\WindowSys\PersonDepartMentManagerWindowSys.cs" />
-    <Compile Include="DepartMentManager\DepartManagerWindow\人事部部长\Window\PersonDepartMentManagerWindow.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\人事部部长\WindowSys\PersonDepartMentManagerWindowSys.cs" />
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\人事部部长\Window\PersonDepartMentManagerWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\人事部部长\Window\PersonDepartMentManagerWindow.Designer.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\人事部部长\Window\PersonDepartMentManagerWindow.Designer.cs">
       <DependentUpon>PersonDepartMentManagerWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\后勤部部长\WindowSys\LogisticsDepartmentManagerWindowSys.cs" />
-    <Compile Include="DepartMentManager\DepartManagerWindow\后勤部部长\Window\LogisticsDepartmentManagerWindow.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\人事部部长\Window\PersonManagerWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\后勤部部长\Window\LogisticsDepartmentManagerWindow.Designer.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\人事部部长\Window\PersonManagerWindow.Designer.cs">
+      <DependentUpon>PersonManagerWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\人事部部长\WindowSys\PersonManagerWindowSys.cs" />
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\后勤部部长\WindowSys\LogisticsDepartmentManagerWindowSys.cs" />
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\后勤部部长\Window\LogisticsDepartmentManagerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\后勤部部长\Window\LogisticsDepartmentManagerWindow.Designer.cs">
       <DependentUpon>LogisticsDepartmentManagerWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\开发部部长\WindowSys\DevelopDepartMentManagerWindowSys.cs" />
-    <Compile Include="DepartMentManager\DepartManagerWindow\开发部部长\Window\DevelopDepartMentManagerWindow.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\开发部部长\WindowSys\DevelopDepartMentManagerWindowSys.cs" />
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\开发部部长\Window\DevelopDepartMentManagerWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\开发部部长\Window\DevelopDepartMentManagerWindow.Designer.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\开发部部长\Window\DevelopDepartMentManagerWindow.Designer.cs">
       <DependentUpon>DevelopDepartMentManagerWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\财务部部长\WindowSys\FinanceDepartmentManagerWindowSys.cs" />
-    <Compile Include="DepartMentManager\DepartManagerWindow\财务部部长\Window\FinanceDepartmentManagerWindow.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\财务部部长\WindowSys\FinanceDepartmentManagerWindowSys.cs" />
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\财务部部长\Window\FinanceDepartmentManagerWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\财务部部长\Window\FinanceDepartmentManagerWindow.Designer.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\财务部部长\Window\FinanceDepartmentManagerWindow.Designer.cs">
       <DependentUpon>FinanceDepartmentManagerWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\销售部部长\WindowSys\MarketDepartMentManagerWindowSys.cs" />
-    <Compile Include="DepartMentManager\DepartManagerWindow\销售部部长\Window\MarketDepartMentManagerWindow.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\销售部部长\WindowSys\MarketDepartMentManagerWindowSys.cs" />
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\销售部部长\Window\MarketDepartMentManagerWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartMentManager\DepartManagerWindow\销售部部长\Window\MarketDepartMentManagerWindow.Designer.cs">
+    <Compile Include="DepartMentManagerData\DepartManagerWindow\销售部部长\Window\MarketDepartMentManagerWindow.Designer.cs">
       <DependentUpon>MarketDepartMentManagerWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepartMentManager\Manager\DepartMentManager.cs" />
+    <Compile Include="DepartMentManagerData\Manager\DepartMentManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DepartMentManager\DepartManagerWindow\人事部部长\Window\PersonDepartMentManagerWindow.resx">
+    <EmbeddedResource Include="DepartMentManagerData\DepartManagerWindow\人事部部长\Window\PersonDepartMentManagerWindow.resx">
       <DependentUpon>PersonDepartMentManagerWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DepartMentManager\DepartManagerWindow\开发部部长\Window\DevelopDepartMentManagerWindow.resx">
+    <EmbeddedResource Include="DepartMentManagerData\DepartManagerWindow\人事部部长\Window\PersonManagerWindow.resx">
+      <DependentUpon>PersonManagerWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartMentManagerData\DepartManagerWindow\开发部部长\Window\DevelopDepartMentManagerWindow.resx">
       <DependentUpon>DevelopDepartMentManagerWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -138,17 +148,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\人事部组长\WindowSys\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\人事部组长\Window\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\后勤部组长\WindowSys\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\后勤部组长\Window\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\开发部组长\WindowSys\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\开发部组长\Window\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\财务部组长\WindowSys\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\财务部组长\Window\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\销售部组长\WindowSys\" />
-    <Folder Include="DepartMentManager\DepartMentGroupManagerWindow\销售部组长\Window\" />
-    <Folder Include="DepartMentManager\Name\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\人事部组长\WindowSys\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\人事部组长\Window\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\后勤部组长\WindowSys\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\后勤部组长\Window\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\开发部组长\WindowSys\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\开发部组长\Window\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\财务部组长\WindowSys\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\财务部组长\Window\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\销售部组长\WindowSys\" />
+    <Folder Include="DepartMentManagerData\DepartMentGroupManagerWindow\销售部组长\Window\" />
+    <Folder Include="DepartMentManagerData\Name\" />
     <Folder Include="DepartMentMember\人事部\WindowSys\" />
     <Folder Include="DepartMentMember\人事部\Window\" />
     <Folder Include="DepartMentMember\后勤部\WindowSys\" />

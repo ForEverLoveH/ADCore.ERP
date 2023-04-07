@@ -214,7 +214,7 @@ namespace AD.CoreERP.AD.CoreWindowSys
 
         public void ShowDepartMentWindow(string departName, string acc, string pass, bool isPhone)
         {
-             DepartMentManager.Instance.ShowDepartMentWindow(departName,acc,pass,_freeSql,isPhone);
+             DepartMentManagerDatas.Instance.ShowDepartMentWindow(departName,acc,pass,_freeSql,isPhone);
         }
     }
 }

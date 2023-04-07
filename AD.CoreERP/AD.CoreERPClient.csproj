@@ -136,6 +136,7 @@
   <ItemGroup>
     <Compile Include="AD.CoreClientSystem\GameHelper\FreeSqlHelper.cs" />
     <Compile Include="AD.CoreClientSystem\GameHelper\ImageHelper.cs" />
+    <Compile Include="AD.CoreClientSystem\GameHelper\Mysql\MysqlHelper\MysqlHelper.cs" />
     <Compile Include="AD.CoreClientSystem\GameHelper\WriteLogHelper.cs" />
     <Compile Include="AD.CoreClientSystem\ImageCode\ImageCode.cs" />
     <Compile Include="AD.CoreClientSystem\View\AD.CoreWindowSys\LoginWindowSys.cs" />

@@ -27,3 +27,6 @@ D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Deb
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\log4net.xml
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\Serilog.xml
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.DepartMent.DepartManagerWindow.DevelopDepartMentManagerWindow.resources
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\obj\Debug\AD.Core.DepartMentManager.DepartMentManager.DepartManagerWindow.PersonManagerWindow.resources
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\System.Data.SQLite.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.Core.DepartMentManager\bin\Debug\System.Data.SQLite.xml

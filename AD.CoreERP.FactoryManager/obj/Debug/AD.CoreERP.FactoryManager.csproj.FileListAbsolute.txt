@@ -38,3 +38,5 @@ D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.FactoryManager\obj\Deb
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.FactoryManager\obj\Debug\AD.CoreERP.FactoryManager.csproj.CopyComplete
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.FactoryManager\obj\Debug\AD.CoreERP.FactoryManager.exe
 D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.FactoryManager\obj\Debug\AD.CoreERP.FactoryManager.pdb
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.FactoryManager\bin\Debug\System.Data.SQLite.dll
+D:\WorkProject\C#Project\AD.CoreERP\ADCore.ERP\AD.CoreERP.FactoryManager\bin\Debug\System.Data.SQLite.xml
