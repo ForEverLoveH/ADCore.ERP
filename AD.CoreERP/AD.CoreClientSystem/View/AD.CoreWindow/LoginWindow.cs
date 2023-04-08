@@ -28,9 +28,6 @@ namespace AD.CoreERP.AD.CoreWindow
        
         private const int ImageVeriCodeLength = 4;//验证码长度        
         private String strImageVeriCode = "";//验证码
-        
-        
-        
         ImageCode imageCode = new ImageCode();
         private void uiButton1_Click(object sender, EventArgs e)
         {

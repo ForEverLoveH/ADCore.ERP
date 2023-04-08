@@ -158,9 +158,7 @@ namespace AD.CoreERP.Other_.OtherManager.OtherManagerWindow
             uiComboBox1.Text= string.Empty;
             uiComboBox3.Text= string.Empty;
             uiComboBox2.Text= string.Empty; 
-            
-
-
+           
         }
         Bitmap bmp= null;   
        
